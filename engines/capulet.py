@@ -7,4 +7,4 @@ class CapuletEngine(Engine):
         self.__current_mileage = current_mileage
 
     def needs_service(self) -> bool:
-        self.__current_mileage - self.__last_service_mileage > 30000
+        return self.__current_mileage - self.__last_service_mileage > 30000
